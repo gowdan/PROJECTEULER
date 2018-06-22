@@ -1,14 +1,15 @@
-var firstNum = 0,
-    secondNum = 1,
-    lastNum = 4000000,
-    nextNum = 0,
-    sum = 0;
-  while ( (firstNum + sum) <= lastNum) {
-    nextNum = firstNum + secondNum;
-    firstNum = secondNum;
-    secondNum = nextNum;
-  if (firstNum % 2 == 0) {
-    sum += firstNum;
+var first_num = 0,
+  secon_num = 1,
+  last_num = 4000000,
+  next_num = 0,
+  sum = 0;
+
+while ((first_num + sum) <= last_num) {
+  next_num = first_num + second_num;
+  first_num = second_num;
+  second_num = next_num;
+  if (first_num % 2 == 0) {
+    sum += first_num;
   }
 }
-    console.log(sum);
+console.log(sum);
